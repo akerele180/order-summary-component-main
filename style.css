@@ -1,0 +1,123 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap"); */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bgcolor: #e0e8ff;
+  --Brightblue: #3829e0;
+
+  --Verypaleblue: #f5f7ff;
+  --Desaturatedblue: #7280a7;
+  --Darkblue: #1f2f56;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+main {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--bgcolor);
+}
+h1 {
+  margin-top: 0;
+}
+h1 + p {
+  font-size: 1.1rem;
+
+  padding: 0 30px;
+  color: var(--Desaturatedblue);
+}
+section {
+  max-width: 400px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.bg-image-container {
+  height: 200px;
+  background-image: url("./images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px 20px 0 0;
+}
+.text {
+  padding: 30px 40px 30px;
+}
+div.mini-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: var(--Verypaleblue);
+  margin: 30px 0;
+}
+
+span.price {
+  color: var(--Desaturatedblue);
+  font-weight: normal;
+  display: block;
+}
+/* button */
+button {
+  width: 100%;
+  border: none;
+  padding: 15px 0;
+  line-height: 1.5rem;
+  margin: 5px 0;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+}
+button.payment {
+  background-color: var(--Brightblue);
+  color: #ffffff;
+  box-shadow: 0px 7px 27px -8px #1f2f56;
+}
+button.cancel-order {
+  background: transparent;
+  color: var(--Desaturatedblue);
+}
+button.cancel-order:hover {
+  color: #1f2f56;
+}
+button.payment:hover {
+  filter: brightness(1.2);
+}
+/* footer stylesheet */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 768px) {
+  main {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    padding: 3vw;
+  }
+  .text {
+    padding: 20px 25px;
+  }
+  p {
+    padding: 10px !important;
+  }
+}
