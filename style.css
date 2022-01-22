@@ -25,6 +25,7 @@ main {
   display: grid;
   place-items: center;
   background-image: url("./images/pattern-background-desktop.svg");
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--bgcolor);
@@ -34,8 +35,7 @@ h1 {
 }
 h1 + p {
   font-size: 1.1rem;
-
-  padding: 0 30px;
+  /* padding: 0 30px; */
   color: var(--Desaturatedblue);
 }
 section {
